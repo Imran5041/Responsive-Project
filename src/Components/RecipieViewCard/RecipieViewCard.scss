@@ -1,0 +1,45 @@
+@import "/src/Utils/Styles/mediaQuery.scss";
+@import "/src/Utils/Styles/variables.scss";
+.RecipieViewCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__imgContainer {
+    height: 40vh;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__contentContainer {
+    .title {
+      text-align: left;
+      font-weight: 600;
+      font-size: 2rem;
+      color: $colorRed;
+    }
+
+    .ingredients {
+      text-align: left;
+      font-weight: 400;
+      font-size: 1.2rem;
+      .prod {
+        color: $colorDarkGrey;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .instructions {
+      text-align: left;
+      line-height: 200%;
+      font-size: 1.1rem;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "/src/Utils/Styles/mediaQuery.scss";
+
+.ProductListing {
+  width: 100%;
+  display: flow-root;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__titleContainer {
+    display: flex;
+    justify-content: space-between;
+  color: green;
+  }
+
+  &__productContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 3rem;
+    column-gap: 3%;
+    column-gap: 2rem;
+
+    @include for-size(phone-only) {
+      flex-direction: column;
+    }
+
+    .prodBox {
+      width: 22%;
+      height: auto;
+      @include for-size(phone-only) {
+        width: 100%;
+      }
+    }
+  }
+}

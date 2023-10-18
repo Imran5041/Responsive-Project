@@ -1,0 +1,17 @@
+@import "/src/Utils/Styles/variables";
+.QuantityChanger {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: $colorGreen;
+
+  &__increase {
+  }
+  &__value {
+    color: black;
+    margin: 0.2rem 0.5rem !important;
+  }
+}

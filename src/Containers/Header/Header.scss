@@ -1,0 +1,40 @@
+@import "/src/Utils/Styles/variables";
+@import "/src/Utils/Styles/mediaQuery";
+.Header {
+  width: 100%;
+  min-height: 100px;
+  background: #000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    width: fit-content;
+    height: auto;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__searchBar {
+    width: 30%;
+    height: 60px;
+    background: white;
+
+    @include for-size(phone-only) {
+      display: none;
+    }
+  }
+
+  &__profileContainer {
+    display: flex;
+    width: fit-content;
+    color: white;
+    justify-content: right;
+    gap: 1rem;
+    .icon {
+      font-size: 1.5rem;
+    }
+  }
+}
